@@ -1,0 +1,444 @@
+:root{
+    --primary-color: #cb202d;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 80vh;
+    background-image: url('/image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    height: 70px;
+}
+
+.navbar{
+    background: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+.dropdown_menu{
+    padding: 0 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 7px;
+    height: 0;
+    overflow: hidden;
+}
+.open{
+    height: 130px;
+}
+.content{
+    height: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.open_2{
+    filter: blur(3px);
+}
+.search{
+    background-color: #fff;
+    height: 50px;
+    width: 650px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 0 40px;
+}
+.search select{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.search_items .input_1{
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.Online_Order{
+    padding: 3rem 8rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* padding: 3rem 8rem; */
+    grid-gap: 2rem;
+}
+.card_1, .card_2{
+    height: 300px;
+    border: 1px solid #999999;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.collection{
+    padding: 2rem 8rem;
+}
+.collection .headlines{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.collection .headlines h4 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.collection .collection_cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+.collection .collection_card_1{
+    background-image: url('image/col1.jpg');
+    background-size: cover;
+    height: 350px;
+}
+.collection .collection_card_2{
+    background-image: url('image/col2.jpg');
+    background-size: cover;
+    height: 350px;
+}
+.collection .collection_card_3{
+    background-image: url('image/col3.jpg');
+    background-size: cover;
+    height: 350px;
+}
+.collection .collection_card_4{
+    background-image: url('image/col4.jpg');
+    background-size: cover;
+    height: 350px;
+}
+.popular_places{
+    padding: 3rem 8rem;
+}
+.popular_places .places_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+
+/* App Section */
+.app_section{
+    padding: 2rem 0;
+}
+.app_section .app_content{
+    background-color: rgba(243, 236, 241, 0.39);
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app_section .app_content .checkbox_size{
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.app_section .app_content .checkbox_size input{
+    border-radius: 5px;
+    border: 1px solid #222;
+    padding: 3px;
+}
+.app_section .app_content .download_btn{
+    display: flex;
+    justify-content: space-between;
+}
+.app_section .app_content .download_btn button{
+    margin: 5px;
+    border: none;
+}
+.app_section .app_content .app_radio{
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app_section .app_content .app_radio .app_email{
+    margin-right: 30px;
+}
+
+
+/* Explore section */
+.explore{
+    padding: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+/* footer */
+.footer{
+    background-color: rgba(245, 245, 220, 0.548);
+    padding: 3rem 8rem;
+}
+.footer .footer_head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .footer_content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer .footer_bottom{
+    margin: 3rem 0; 
+}
+
+
+
+/* Utility Classes */
+.text_dull{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 8px;
+    font-size: 1.3rem;
+}
+.image_size{
+    height: 80px;
+    width: auto;
+}
+.text-md{
+    color: #fff;
+    font-size: 35px;
+    margin: 20px;
+}
+.bar_style{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
+.text_hover:hover{
+    color: var(--primary-color); 
+}
+.telescope{
+    margin: 7px;
+}
+.image_online{
+    height: 75%;
+    width: 100%;
+}
+.text_online{
+    text-decoration: none;
+    color: #222;
+    margin: 5px 10px;
+}
+.card_hover:hover{
+    box-shadow: 2px 2px 2px #999999;
+}
+.text_lg{
+    font-size: 45px;
+}
+.text_md{
+    margin: 10px 0px;
+    font-size: 25px;
+}
+.collection_card{
+    border-radius: 15px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 5px;
+}
+.place_card_decoration{
+    border: 1px solid #999999;
+    border-radius: 10px;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.app_image_size{
+    height: 80%;
+    width: auto;
+}
+.app_card_size{
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+#app_checkbox{
+    border-radius: 25px;
+    height: 50px;
+}
+.email_box{
+    font-size: 20px;
+}
+.cover_size{
+    height: 100%;
+    width: 45%;
+    font-size: 20px;
+}
+.btn{
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.btn:hover{
+    opacity: 1;
+}
+.download_btn_size{
+    height: 50px;
+    width: 200px;
+}
+.explore_select{
+    height: 50px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0 20px;
+}
+.footer_img{
+    height: 80px;
+    width: 350px
+}
+.footer_btn_1{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #999999;
+    color: white;
+    outline: none;
+    padding: 2px 5px;
+}
+.footer_card{
+    height: 180px;
+    display: flex;
+    grid-gap: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_card a{
+    text-decoration: none;
+    color: #222;
+    line-height: 40px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.footer_btn_size{
+    height: 70px;
+    width: 230px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+}
+.footer_btn{
+    height: 100%;
+    width: 100%;
+}
+
+    
+
+/* responsiveness */
+@media(max-width: 1010px){
+    .content img{
+        display: -1;
+    }
+    .header .navbar .right{
+        display: none;
+    }
+    .header .navbar .bar_style{
+        display: block;
+    }
+    .app_section .app_content .checkbox_size{
+        height: 50px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 950px){
+    .footer .footer_content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
+@media(max-width: 910px){
+    .collection .collection_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 810px){
+    .navbar{
+        padding: 0 2rem;
+    }
+    .Online_Order{
+        padding: 3rem 2rem;
+    }
+    .collection{
+        padding: 2rem 2rem;
+    }
+    .app_section .app_content{
+        flex-direction: column;
+    }
+    .app_section .app_content .app_right{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .header .search{
+        flex-direction: column;
+        height: 80px;
+        width: 300px;
+    }
+    .popular_places{
+        padding: 2rem 2rem;
+    }
+    .popular_places .places_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .explore{
+        padding: 2rem 2rem;
+    }
+    .footer{
+        padding: 2rem 3rem;
+    }
+}
+@media(max-width: 600px){
+    .Online_Order .cards{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .collection .collection_cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popular_places .places_cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .collection .headlines{
+        flex-direction: column;
+    }
+    .footer .footer_img{
+        width: 250px;
+        height: auto;
+    }
+}
